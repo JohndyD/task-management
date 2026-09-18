@@ -1,0 +1,499 @@
+/* =========================================================
+   EDIT TASK PAGE
+========================================================= */
+
+.edit-task-page-header {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto 24px;
+}
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.edit-task-back {
+    margin-bottom: 12px;
+}
+
+.edit-task-back button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.edit-task-back button:hover {
+    color: #0d6efd;
+    transform: translateX(-2px);
+}
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.edit-task-title {
+    margin: 0;
+    color: #212529;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.edit-task-subtitle {
+    margin: 6px 0 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* =========================================================
+   EDIT TASK CARD
+========================================================= */
+
+.edit-task-card {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid #e7eaf0;
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.04),
+        0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+/* =========================================================
+   FORM HEADER
+========================================================= */
+
+.edit-task-form-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px 30px;
+
+    background: #f8faff;
+    border-bottom: 1px solid #e9edf5;
+}
+
+.edit-task-form-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 10px;
+    background: #e9f2ff;
+    color: #0d6efd;
+
+    font-size: 20px;
+}
+
+.edit-task-form-header h4 {
+    margin: 0;
+    color: #212529;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.edit-task-form-header p {
+    margin: 3px 0 0;
+    color: #6c757d;
+    font-size: 13px;
+}
+
+/* =========================================================
+   FORM BODY
+========================================================= */
+
+.edit-task-card form {
+    padding: 30px;
+}
+
+/* =========================================================
+   FORM SECTION
+========================================================= */
+
+.edit-task-section {
+    margin-bottom: 30px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #edf0f3;
+}
+
+.edit-task-section:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.edit-task-section-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 20px;
+
+    color: #343a40;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.edit-task-section-title i {
+    color: #0d6efd;
+    font-size: 16px;
+}
+
+/* =========================================================
+   FORM LABEL
+========================================================= */
+
+.edit-task-card .form-label {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 8px;
+
+    color: #343a40;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* =========================================================
+   FORM INPUTS
+========================================================= */
+
+.edit-task-card .form-control {
+    min-height: 46px;
+    padding: 10px 13px;
+
+    border: 1px solid #d8dde5;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+    color: #212529;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.edit-task-card .form-control::placeholder {
+    color: #adb5bd;
+}
+
+.edit-task-card .form-control:hover {
+    border-color: #b9c1cc;
+}
+
+.edit-task-card .form-control:focus {
+    border-color: #86b7fe;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.10);
+    outline: none;
+}
+
+.edit-task-card .form-control:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.edit-task-description {
+    min-height: 145px !important;
+    resize: vertical;
+    line-height: 1.6 !important;
+}
+
+/* =========================================================
+   DATETIME / NUMBER INPUTS
+========================================================= */
+
+.edit-task-card input[type="datetime-local"] {
+    cursor: pointer;
+}
+
+.edit-task-card input[type="number"] {
+    font-weight: 500;
+}
+
+/* =========================================================
+   REQUIRED ASTERISK
+========================================================= */
+
+.edit-task-card .text-danger {
+    font-size: 13px;
+}
+
+/* =========================================================
+   SUBMISSION SETTINGS
+========================================================= */
+
+.edit-task-setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #e9ecef;
+}
+
+.edit-task-setting-row:last-child {
+    border-bottom: none;
+}
+
+.edit-task-setting-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.edit-task-setting-title {
+    color: #212529;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.edit-task-setting-title i {
+    color: #0d6efd;
+}
+
+.edit-task-setting-description {
+    max-width: 650px;
+    margin-top: 5px;
+
+    color: #6c757d;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.edit-task-setting-control {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.edit-task-setting-control .form-control {
+    height: 38px;
+}
+
+.edit-task-setting-control small {
+    display: block;
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+.edit-task-setting-row .form-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.edit-task-setting-row .form-check-input {
+    width: 2.5em;
+    height: 1.3em;
+    cursor: pointer;
+}
+
+.edit-task-setting-row .form-check-label {
+    color: #495057;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.edit-task-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+    margin-top: 28px;
+    padding-top: 24px;
+
+    border-top: 1px solid #edf0f3;
+}
+
+.edit-task-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 135px;
+    min-height: 43px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.edit-task-actions .btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+/* CANCEL BUTTON */
+
+.edit-cancel-btn {
+    border-color: #d6d9de;
+    background: #ffffff;
+    color: #495057;
+}
+
+.edit-cancel-btn:hover:not(:disabled) {
+    background: #f8f9fa;
+    border-color: #c5cad1;
+    color: #343a40;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* SAVE BUTTON */
+
+.edit-save-btn {
+    border: none;
+    box-shadow: 0 2px 5px rgba(13, 110, 253, 0.15);
+}
+
+.edit-save-btn:hover:not(:disabled) {
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.20);
+}
+
+/* =========================================================
+   ALERTS
+========================================================= */
+
+.edit-task-page-header + .alert {
+    width: 100%;
+    max-width: 920px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+}
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.edit-task-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 400px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .edit-task-page-header,
+    .edit-task-card {
+        max-width: 100%;
+    }
+
+    .edit-task-title {
+        font-size: 24px;
+    }
+
+    .edit-task-card {
+        border-radius: 10px;
+    }
+
+    .edit-task-form-header {
+        padding: 18px 20px;
+    }
+
+    .edit-task-card form {
+        padding: 20px;
+    }
+
+    .edit-task-section {
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+
+    .edit-task-setting-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .edit-task-setting-control {
+        width: 100%;
+    }
+
+    .edit-task-setting-row .form-switch {
+        align-self: flex-start;
+    }
+
+    .edit-task-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .edit-task-actions .btn {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .edit-task-form-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+    }
+
+    .edit-task-form-header h4 {
+        font-size: 15px;
+    }
+
+    .edit-task-form-header p {
+        font-size: 12px;
+    }
+
+    .edit-task-card form {
+        padding: 18px;
+    }
+}

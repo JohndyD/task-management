@@ -1,0 +1,722 @@
+/* =========================================================
+   ADD TASK PAGE
+========================================================= */
+
+.add-task-page-header {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto 24px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.add-task-back {
+    margin-bottom: 12px;
+}
+
+.add-task-back button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.add-task-back button:hover {
+    color: #0d6efd;
+    transform: translateX(-2px);
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.add-task-title {
+    margin: 0;
+    color: #212529;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.add-task-subtitle {
+    margin: 6px 0 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.add-task-card {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e7eaf0;
+    border-radius: 14px;
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.04),
+        0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+
+/* =========================================================
+   FORM HEADER
+========================================================= */
+
+.add-task-form-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px 30px;
+    background: #f8faff;
+    border-bottom: 1px solid #e9edf5;
+}
+
+.add-task-form-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    background: #e9f2ff;
+    color: #0d6efd;
+    font-size: 20px;
+}
+
+.add-task-form-header h4 {
+    margin: 0;
+    color: #212529;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.add-task-form-header p {
+    margin: 3px 0 0;
+    color: #6c757d;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FORM BODY
+========================================================= */
+
+.add-task-card form {
+    padding: 30px;
+}
+
+
+/* =========================================================
+   FORM SECTIONS
+========================================================= */
+
+.add-task-section {
+    margin-bottom: 30px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #edf0f3;
+}
+
+.add-task-section:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.add-task-section-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.add-task-section-title i {
+    color: #0d6efd;
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   FORM LABELS
+========================================================= */
+
+.add-task-card .form-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #343a40;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   FORM INPUTS
+========================================================= */
+
+.add-task-card .form-control {
+    min-height: 46px;
+    padding: 10px 13px;
+    border: 1px solid #d8dde5;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #212529;
+    font-size: 14px;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.add-task-card .form-control::placeholder {
+    color: #adb5bd;
+}
+
+.add-task-card .form-control:hover {
+    border-color: #b9c1cc;
+}
+
+.add-task-card .form-control:focus {
+    outline: none;
+    border-color: #86b7fe;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+.add-task-card .form-control:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.add-task-description {
+    min-height: 145px !important;
+    resize: vertical;
+    line-height: 1.6 !important;
+}
+
+
+/* =========================================================
+   SPECIAL INPUTS
+========================================================= */
+
+.add-task-card input[type="datetime-local"] {
+    cursor: pointer;
+}
+
+.add-task-card input[type="number"] {
+    font-weight: 500;
+}
+
+.add-task-card .text-danger {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SUBMISSION SETTINGS
+========================================================= */
+
+.add-task-setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.add-task-setting-row:last-child {
+    border-bottom: none;
+}
+
+.add-task-setting-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.add-task-setting-title {
+    color: #212529;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.add-task-setting-title i {
+    color: #0d6efd;
+}
+
+.add-task-setting-description {
+    max-width: 650px;
+    margin-top: 5px;
+    color: #6c757d;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.add-task-setting-control {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.add-task-setting-control .form-control {
+    height: 38px;
+}
+
+.add-task-setting-control small {
+    display: block;
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+.add-task-setting-row .form-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.add-task-setting-row .form-check-input {
+    width: 2.5em;
+    height: 1.3em;
+    cursor: pointer;
+}
+
+.add-task-setting-row .form-check-label {
+    color: #495057;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.add-task-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid #edf0f3;
+}
+
+.add-task-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 135px;
+    min-height: 43px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.add-task-actions .btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   CANCEL BUTTON
+========================================================= */
+
+.add-cancel-btn {
+    border-color: #d6d9de;
+    background: #ffffff;
+    color: #495057;
+}
+
+.add-cancel-btn:hover:not(:disabled) {
+    background: #f8f9fa;
+    border-color: #c5cad1;
+    color: #343a40;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================================
+   CREATE / SAVE BUTTON
+========================================================= */
+
+.add-save-btn {
+    border: none;
+    box-shadow: 0 2px 5px rgba(13, 110, 253, 0.15);
+}
+
+.add-save-btn:hover:not(:disabled) {
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+}
+
+
+/* =========================================================
+   TASK TABLE
+========================================================= */
+
+.tasks-table-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.tasks-table {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    table-layout: fixed;
+}
+
+.tasks-table thead th {
+    padding: 15px 18px !important;
+    font-size: 0.82rem;
+    font-weight: 600;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.tasks-table tbody td {
+    padding: 16px 18px !important;
+    font-size: 0.88rem;
+    vertical-align: middle;
+}
+
+.tasks-table thead th:first-child,
+.tasks-table tbody td:first-child {
+    padding-left: 22px !important;
+}
+
+.tasks-table thead th:last-child,
+.tasks-table tbody td:last-child {
+    padding-right: 22px !important;
+}
+
+
+/* =========================================================
+   TASK COLUMN
+========================================================= */
+
+.tasks-table .task-name {
+    overflow: hidden;
+    font-weight: 600;
+    line-height: 1.35;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tasks-table .task-description {
+    margin-top: 4px;
+    overflow: hidden;
+    color: #6c757d;
+    font-size: 0.78rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TASK DETAILS
+========================================================= */
+
+.tasks-table .task-deadline,
+.tasks-table .task-created-date {
+    font-size: 0.82rem;
+    white-space: nowrap;
+}
+
+.tasks-table .task-score {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.tasks-table .task-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.tasks-table .status-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.tasks-table .task-status.active {
+    color: #198754;
+}
+
+.tasks-table .task-status.active .status-dot {
+    background-color: #198754;
+}
+
+.tasks-table .task-status.closed {
+    color: #6c757d;
+}
+
+.tasks-table .task-status.closed .status-dot {
+    background-color: #6c757d;
+}
+
+
+/* =========================================================
+   TABLE ACTION BUTTONS
+========================================================= */
+
+.task-action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.task-action-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background: transparent;
+    cursor: pointer;
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+.task-action-icon i {
+    font-size: 0.95rem;
+}
+
+.task-action-icon:hover {
+    transform: translateY(-1px);
+}
+
+
+/* View */
+
+.task-action-icon.view {
+    border-color: #cfe2ff;
+    color: #0d6efd;
+}
+
+.task-action-icon.view:hover {
+    background-color: #e7f1ff;
+    border-color: #9ec5fe;
+}
+
+
+/* Edit */
+
+.task-action-icon.edit {
+    border-color: #dee2e6;
+    color: #6c757d;
+}
+
+.task-action-icon.edit:hover {
+    background-color: #f1f3f5;
+    border-color: #adb5bd;
+}
+
+
+/* Delete */
+
+.task-action-icon.delete {
+    border-color: #f1b0b7;
+    color: #dc3545;
+}
+
+.task-action-icon.delete:hover {
+    background-color: #fff0f1;
+    border-color: #dc3545;
+}
+
+
+/* =========================================================
+   DATATABLE CONTROLS
+========================================================= */
+
+.tasks-card .dt-container {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.tasks-card .dt-layout-row:first-child {
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+.tasks-card .dt-layout-row:last-child {
+    padding-top: 12px;
+    padding-bottom: 16px;
+}
+
+
+/* =========================================================
+   ALERTS
+========================================================= */
+
+.add-task-alert {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto 20px;
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.add-task-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .tasks-table thead th,
+    .tasks-table tbody td {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .tasks-table .task-description {
+        display: none;
+    }
+
+    .task-action-buttons {
+        gap: 5px;
+    }
+
+    .task-action-icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .add-task-page-header {
+        max-width: 100%;
+    }
+
+    .add-task-title {
+        font-size: 24px;
+    }
+
+    .add-task-card {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .add-task-form-header {
+        padding: 18px 20px;
+    }
+
+    .add-task-card form {
+        padding: 20px;
+    }
+
+    .add-task-section {
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+
+    .add-task-setting-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .add-task-setting-control {
+        width: 100%;
+    }
+
+    .add-task-setting-row .form-switch {
+        align-self: flex-start;
+    }
+
+    .add-task-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .add-task-actions .btn {
+        width: 100%;
+    }
+
+    .tasks-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .tasks-table {
+        min-width: 850px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .add-task-form-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+    }
+
+    .add-task-form-header h4 {
+        font-size: 15px;
+    }
+
+    .add-task-form-header p {
+        font-size: 12px;
+    }
+
+    .add-task-card form {
+        padding: 18px;
+    }
+}

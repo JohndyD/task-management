@@ -1,0 +1,734 @@
+/* =========================================================
+   STUDENT TASKS PAGE
+========================================================= */
+
+.student-tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.student-tasks-title {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.student-tasks-subtitle {
+    margin: 6px 0 0;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.student-back-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    color: #475569;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.student-back-button:hover {
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+
+/* =========================================================
+   TASK LIST
+========================================================= */
+
+.student-task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.student-full-task-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.student-task-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.student-full-task-title {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.student-full-task-creator {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.student-full-task-description {
+    margin-top: 18px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #f8fafc;
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   TASK STATUS
+========================================================= */
+
+.student-full-task-status {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.student-full-task-status.pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.student-full-task-status.submitted {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.student-full-task-status.graded {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.student-full-task-status.missed {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+
+/* =========================================================
+   TASK DETAILS
+========================================================= */
+
+.student-full-task-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.student-task-detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border: 1px solid #f1f5f9;
+    border-radius: 8px;
+}
+
+.student-task-detail > i {
+    font-size: 18px;
+    color: #2563eb;
+}
+
+.student-task-detail div {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.student-task-detail span {
+    font-size: 11px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.student-task-detail strong {
+    margin-top: 2px;
+    font-size: 13px;
+    color: #334155;
+}
+
+
+/* =========================================================
+   SUBMISSION SETTINGS
+========================================================= */
+
+.student-task-submission-settings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    margin-top: 20px;
+    padding: 16px 18px;
+
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+}
+
+.student-task-setting-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+
+    min-width: 0;
+}
+
+.student-task-setting-label {
+    display: flex;
+    align-items: center;
+
+    color: #6c757d;
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.student-task-setting-label i {
+    font-size: 0.85rem;
+}
+
+.student-task-setting-value {
+    display: block;
+
+    color: #212529;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   SUBMISSION INFORMATION
+========================================================= */
+
+.student-submission-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    margin-top: 18px;
+    padding: 15px;
+
+    border-radius: 8px;
+    background: #f0fdf4;
+    border: 1px solid #dcfce7;
+}
+
+.student-submission-label {
+    font-size: 11px;
+    color: #15803d;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.student-submission-file {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #166534;
+    word-break: break-word;
+}
+
+.student-submission-date {
+    margin-top: 3px;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.student-submission-score {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.student-submission-score span {
+    font-size: 11px;
+    color: #64748b;
+    text-transform: uppercase;
+}
+
+.student-submission-score strong {
+    font-size: 20px;
+    color: #15803d;
+}
+
+
+/* =========================================================
+   TASK FOOTER
+========================================================= */
+
+.student-task-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    margin-top: 22px;
+    padding-top: 18px;
+
+    border-top: 1px solid #f1f5f9;
+}
+
+.student-task-file-note {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.student-submit-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.student-submit-button:hover {
+    background: #1d4ed8;
+}
+
+.student-missed-text {
+    display: inline-flex;
+    align-items: center;
+
+    color: #dc2626;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.student-tasks-empty {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.student-tasks-empty > i {
+    font-size: 42px;
+    color: #94a3b8;
+}
+
+.student-tasks-empty h5 {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #334155;
+}
+
+.student-tasks-empty p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SUBMIT MODAL
+========================================================= */
+
+.student-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    background: rgba(15, 23, 42, 0.55);
+}
+
+.student-submit-modal {
+    width: 100%;
+    max-width: 520px;
+    max-height: calc(100vh - 40px);
+
+    overflow-y: auto;
+
+    background: #ffffff;
+    border-radius: 12px;
+
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.25);
+}
+
+
+/* =========================================================
+   MODAL HEADER
+========================================================= */
+
+.student-submit-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+
+    padding: 20px 22px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.student-submit-modal-header h5 {
+    margin: 0;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.student-submit-modal-header p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.student-modal-close {
+    border: none;
+    background: transparent;
+    color: #64748b;
+
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.student-modal-close:hover {
+    color: #1e293b;
+}
+
+
+/* =========================================================
+   SUBMIT FORM
+========================================================= */
+
+.student-submit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 22px;
+}
+
+
+/* =========================================================
+   DEADLINE IN MODAL
+========================================================= */
+
+.student-submit-deadline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 13px;
+
+    border-radius: 8px;
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.student-submit-deadline > i {
+    font-size: 20px;
+}
+
+.student-submit-deadline div {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-submit-deadline span {
+    font-size: 11px;
+    color: #64748b;
+    text-transform: uppercase;
+}
+
+.student-submit-deadline strong {
+    font-size: 13px;
+    color: #334155;
+}
+
+
+/* =========================================================
+   SUBMIT MODAL - ATTEMPT INFORMATION
+========================================================= */
+
+.student-submit-attempt-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    margin-top: 18px;
+    margin-bottom: 20px;
+    padding: 16px 18px;
+
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+}
+
+.student-submit-attempt-info > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+
+    min-width: 0;
+}
+
+.student-submit-attempt-info span {
+    display: block;
+
+    color: #6c757d;
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.student-submit-attempt-info strong {
+    display: block;
+
+    color: #212529;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   FILE UPLOAD
+========================================================= */
+
+.student-file-upload {
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.student-file-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    min-height: 120px;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.student-file-label > i {
+    font-size: 35px;
+    color: #2563eb;
+}
+
+.student-file-label span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.student-file-label small {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.student-file-upload input[type="file"] {
+    display: none;
+}
+
+.student-selected-file {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 12px;
+    padding: 12px;
+
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.student-selected-file > i {
+    font-size: 20px;
+    color: #2563eb;
+}
+
+.student-selected-file div {
+    min-width: 0;
+}
+
+.student-selected-file strong {
+    display: block;
+
+    color: #334155;
+    font-size: 13px;
+
+    word-break: break-word;
+}
+
+.student-selected-file small {
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   MODAL FOOTER
+========================================================= */
+
+.student-submit-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    margin-top: 2px;
+}
+
+.student-cancel-button {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #475569;
+
+    border-radius: 8px;
+    padding: 10px 18px;
+
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.student-cancel-button:hover {
+    background: #f8fafc;
+}
+
+.student-submit-confirm-button {
+    border: none;
+    background: #2563eb;
+    color: #ffffff;
+
+    border-radius: 8px;
+    padding: 10px 18px;
+
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.student-submit-confirm-button:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+.student-submit-confirm-button:disabled,
+.student-cancel-button:disabled,
+.student-modal-close:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .student-tasks-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .student-tasks-title {
+        font-size: 22px;
+    }
+
+    .student-task-card-top {
+        flex-direction: column;
+    }
+
+    .student-full-task-status {
+        align-self: flex-start;
+    }
+
+    .student-full-task-details {
+        grid-template-columns: 1fr;
+    }
+
+    .student-task-submission-settings {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .student-submission-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .student-submission-score {
+        align-items: flex-start;
+    }
+
+    .student-task-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .student-submit-button {
+        width: 100%;
+    }
+
+    .student-submit-modal {
+        max-height: calc(100vh - 20px);
+    }
+
+    .student-submit-attempt-info {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .student-submit-modal-footer {
+        flex-direction: column-reverse;
+    }
+
+    .student-cancel-button,
+    .student-submit-confirm-button {
+        width: 100%;
+    }
+}

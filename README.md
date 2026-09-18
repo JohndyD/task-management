@@ -53,13 +53,13 @@ A web-based task management and student assignment submission system built with 
 
 ### Credentials on users
 
-- student
-- email: john@gmail.com
-- password: student123
+- on student
+- - email: john@gmail.com
+- - password: student123
 
-- admin
-- email: admin@gmail.com
-- password: admin123
+- on admin
+- -email: admin@gmail.com
+- - password: admin123
 
 ### Development Environment
 
